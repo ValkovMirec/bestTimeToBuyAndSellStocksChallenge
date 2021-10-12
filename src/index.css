@@ -11,3 +11,96 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  background-color: #999999;
+}
+
+.App {
+  width: 50%;
+  min-width: 240px;
+  margin: auto;
+  margin-top:3em;
+  font-family: sans-serif;
+  font-size: 1em;
+  text-align: center;
+  padding: 2em;
+  background-color: #666666;
+  border: 3px solid #1db954;
+  border-radius: 1em;
+  box-shadow: 5px 4px 5px #666666;
+  display: flex;
+}
+
+.date-picker-one {
+  margin: 1em;
+  border: 2px solid #1db954;
+  border-radius: 0.5em;
+}
+
+.date-picker-two {
+  margin: 1em;
+  border: 2px solid #1db954;
+  border-radius: 0.5em;
+}
+
+.submit-button {
+  width: 11.2em;
+  height: 2em;
+  margin: 1em;
+  border: 2px solid #1db954;
+  border-radius: 0.5em;
+}
+
+.stock-list {
+  color: #fff;
+}
+
+.days-preview {
+  width: 10em;
+}
+
+.profit {
+  margin: 1em;
+}
+
+.fns-profit-output {
+  color: #fff;
+}
+
+.info-container {
+  width: 100%;
+}
+
+.output-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left-side {
+  text-align: center;
+}
+
+/*Responsive*/
+
+@media only screen and (max-width: 600px) {
+  .output-container {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .App {
+    display: block;
+  }
+  .info-container {
+    margin-left: -48%;
+  }
+  .output-container {
+    margin-left: 50%;
+  }
+  .days-preview {
+    margin-left: 15%;
+  }
+}
